@@ -6,7 +6,7 @@ from keras.models import load_model
 
 app = Flask(__name__)
 
-model = load_model('../app/models/best_classification_model.h5', compile=False)
+model = load_model('best_classification_model.h5', compile=False)
 
 @app.route("/api/predict", methods=["post"])
 def predict():
